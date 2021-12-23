@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Overpass:200,400,700");
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.container {
+  @media (orientation: landscape) {
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) 4fr;
+  }
+}
+
+header {
+  background: #393f44;
+  padding: 3rem 2rem;
+  color: white;
+
+}
+  h1 {
+    margin: 0 0 1rem 0;
+    font-size: 2.25rem;
+    color: #fafafa;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 0.8rem;
+  }
+
+main {
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 0.25rem;
+  padding: 1rem;
+}
+
+ Card styles
+.card {
+  min-height: 4em;
+  background-color: white;
+  position: relative;
+  transition: 0.2s transform ease-in-out;
+}
+  .hover {
+    transform: scale3d(1.2, 1.2, 1) rotate(5deg);
+    z-index: 2;
+    box-shadow: 0 0.2rem 1rem -0.2rem rgba(0, 0, 0, 0.5);
+  }
+
+  :nth-child(4n-7):hover {
+    transform: scale3d(1.2, 1.2, 1) rotate(-5deg);
+  }
+
+  :nth-child(3n-7):hover {
+    transform: scale3d(1.2, 1.2, 1) rotate(-3deg);
+  }
+
+  :nth-child(5n-7):hover {
+    /* or 4n+1 */
+    transform: scale3d(1.2, 1.2, 1) rotate(3deg);
+  }
+
+.img {
+  width: 100%;
+  height: 10rem;
+  background: grey;
+  display: block;
+}
+/* This is where the magic happens */
+input[type="checkbox"] {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+@media (pointer: coarse) {
+  input[type="checkbox"] {
+    height: 2em;
+    width: 2em;
+  }
+}
+
+/* Use z-index to make it accessible to keyboard navigation */
+@media (hover: hover) {
+  input[type="checkbox"] {
+    z-index: -1;
+  }
+
+  .card:hover input[type="checkbox"],
+  input[type="checkbox"]:focus,
+  input[type="checkbox"]:checked {
+    z-index: auto;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {  
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+    </style>
+    <body>
+        <div class="container">
+            <header>
+              <h1>Smiles!</h1>
+              <p>Change the viewport size. This page is responsive without using the width media query!</p>
+            </header>
+            <main>
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+              <div class="card">
+                <input type="checkbox" />
+                <div class="img"></div>
+              </div>
+              <!-- /card -->
+         
+            </main>
+          </div>
+          <!-- /container -->
+    </body>
+</html>
