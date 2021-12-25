@@ -3,32 +3,40 @@
     <head>
         <title>Employee PayRoll Form</title>
         <link rel="stylesheet" href="EmployeePayRollStyles.css">
+        <script defer src="Employee-Payroll.js"></script>
+        <script defer src="EmployeePayrollData.js"></script>
     </head>
-    
+    <!--UC1-->
     <Body>
         <header class="header-content header">
             <div class="logo-content">
-                <img src="..assets/profile-image/payroll.png"alt="">
+                <img src="..assets/images/logo.png"alt="image" style="width:56px">
                 <div>
                     <span class="emp-text">Employee</span>
                     <span class="emp-text emp-payroll">PAYROLL</span>
                 </div>
 
             </div>
+        </header>
+        
             
-            <div>
-                <div class="form-content">
+             
+                <div  id="formId" class="form-content">
                     <form class="form" action="#" onsubmit="save();return false">
                     <div class="form-head">Emplyee PayRoll form</div>
-                    <div class="row-content">
-                        <label class="label text"for="name">Name</label>
-                        <input class="input" type="text" id="name"
-                        name="name" placeholder="your name.."required>
-                    </div>
+                    
                     </form>
                 </div>
-            </div>
+
+                <!--UC2-->
+                <div class="row-content">
+                    <label class="label text"for="name">Name</label>
+                    <input class="input" type="text" id="name"
+                    name="name" placeholder="your name.."required>
+                    <error-output class="text-error" for="text"></error-output>
+                </div>
             
+            <!--UC3-->
             <div class="row-content">
                 <label class="label text" for="profile">Profile image</label>
                 <div class="profile-radio-content">
@@ -57,7 +65,7 @@
                     </label>
                 </div>
             </div>
-
+            <!--UC4-->
             <div class="row-content">
                 <label class="label text" for="gender">Gender</label>
                 <div>
@@ -67,7 +75,7 @@
                     <label class="text" for="female">Female</label>
                 </div>
             </div>
-
+            <!--UC5-->
             <div class="row-content">
                 <label class="label text" for="department">Department</label>
                 <div>
@@ -162,7 +170,7 @@
                     <button type="reset" class="resetButton button">Reset</button>
                 </div>
             </div>
-        </header>
+        
 
        
     </Body>
