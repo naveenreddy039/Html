@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{ padding: 2em; }
+
+            .headerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .footerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .mainContainer {
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .mainContentItem {
+                text-align: left;
+                background: deepskyblue;
+            }
+
+            article{
+                padding: 10px;
+                margin: 10px;
+                background: aqua;
+            }
+
+            .sideBarLeftItem { 
+                background: gold;
+                order: 1; 
+            }
+            .sideBarRightItem { 
+                background: hotpink;
+                order: 3;
+            }
+
+            .sideBarItem { flex:1 0 0;
+                border: 0px solid green; 
+            }
+
+            .mainContentItem { flex: 3 0px; 
+                order: 2; 
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <header class="headerContainer">HEADER-sample flexbox example</header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>First article</h2>
+                    <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack 
+                        portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, 
+                        everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. 
+                        PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+                </article>
+                <article>
+                    <h2>Second article</h2>
+                    <p>
+                        Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack 
+                        portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha 
+                        normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia 
+                        iPhone photo booth health goth gastropub hammock.
+                    </p>
+                </article>
+                <article>
+                    <h2>Third article</h2>
+                    <p>
+                        Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday 
+                        carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin
+                        coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.
+                    </p>
+                    <p>
+                        Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami 
+                        wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle 
+                        pickled man bun cornhole heirloom art party.
+                    </p>
+                </article>
+            </section>
+            <sidebar class="sideBarItem sideBarLeftItem">leftsidebar</sidebar>
+            <sidebar class="sideBarItem sideBarRightItem">rightsidebar</sidebar>
+        </div>
+        <footer class="footerContainer">Footer</footer>
+    </body>
+</html>
